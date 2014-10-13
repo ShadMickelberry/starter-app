@@ -240,7 +240,7 @@ try {
                     <h3 class="media-heading">' . $event->name . '</h3>
 
                     <span class="text-muted">' . $event->description . '</span>
-            <!-- Recreate the Meetup.com RSVP button  API to create RSVP button then display the number of users.-->
+            <!-- Dynamically built the Meetup.com RSVP button  API to create RSVP button then display the number of users.-->
                     <p>
                         <a href="http://www.meetup.com/Las-Vegas-PHP-Users-Group/events/"' . $meetup->getEventIdFromURL($event->event_url) . '"
                         data-event="' . $meetup->getEventIdFromURL($event->event_url) . '" class="mu-rsvp-btn">RSVP</a>
